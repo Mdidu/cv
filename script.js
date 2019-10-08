@@ -1,6 +1,7 @@
 var cv = document.getElementById('CV');
 var leftBloc = document.getElementById('leftBloc');
 var color = true;
+
 cv.addEventListener('click', function (){
 
     if(color){
