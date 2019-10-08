@@ -1,0 +1,70 @@
+#CV{
+    position: relative;
+    left: 3%;
+    width: 70%;
+    min-width: 1000px;
+    padding-left: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px black;
+    min-height: 1120px;
+}
+#leftBloc{
+    display: inline-block;
+    min-width: 600px;
+    width: 50%;
+    border-right: 2px solid black;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+#rightBloc{
+    display: inline-block;
+    width: 24%;
+    min-width: 300px;
+    vertical-align: top;
+    position: relative;
+    margin-top: 5px;
+}
+h1{
+    padding-bottom: 0;
+}
+#intro {
+    text-align: center;
+}
+#name{
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 0;
+}
+#presentation{
+    color: gray;
+}
+h2{
+    color: rgb(51, 102, 255);
+}
+span {
+    font-weight: bold;
+    font-size: 17px;
+}
+.date {
+    color: gray;
+    font-size: 12px;
+}
+p, div{
+    padding-bottom: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin-bottom: 2px;
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration-line: none;
+    color: green;
+}
