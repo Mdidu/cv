@@ -2,6 +2,7 @@ var cv = document.getElementById('CV');
 var leftBloc = document.getElementById('leftBloc');
 var color = true;
 cv.addEventListener('click', function (){
+
     if(color){
         this.style.backgroundColor = 'black';
         this.style.color = 'white';
