@@ -1,12 +1,15 @@
+#body {
+    background: black;
+}
 #CV{
+    background: white;
     position: relative;
     left: 3%;
     width: 70%;
     min-width: 1000px;
     padding-left: 20px;
-    border: 1px solid red;
     border-radius: 5px;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 10px 5px 5px gray;
     min-height: 1120px;
 }
 #leftBloc{
@@ -49,6 +52,7 @@ span {
 }
 .date {
     color: gray;
+    font-style: italic;
     font-size: 12px;
 }
 p, div{
@@ -61,9 +65,44 @@ ul {
 }
 li {
     margin-bottom: 2px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 a{
     text-decoration-line: none;
     color: green;
+}
+.bar {
+    /*border: 1px solid gray;*/
+    background: gray;
+    min-width: 50px;
+    height: 15px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+.color {
+    display: inline-block;
+    background: blue;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#html {
+    width: 70%;
+}
+#css {
+    width: 70%;
+}
+#javascript {
+    width: 30%;
+}
+#php {
+    width: 30%;
+}
+#mysql {
+    width: 50%;
+}
+#c {
+    width: 30%;
 }
