@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="body">
+<button id="changeColor"> Changement de couleur</button>
     <!-- Block containing the cv-->
     <div id="CV">
+        <h1>Développeur web</h1>
     <!-- Block containing the personal intro -->
         <div id="intro">
-            <h1>Développeur web</h1>
 
             <div id="name">Alexandre Meddas</div>
 
@@ -18,17 +19,17 @@
         </div>
 <!--        Block containing the left part of the cv -->
         <div id="leftBloc">
-            <h2>Diplômes et formation</h2>
-            <div>
+            <h2 id="diplome">Diplômes et formation</h2>
+            <div id="blocDiplome">
                 <p><span>Titre professionnel Développeur Web</span> <br> UpTo à Fourmies<br> <span class="date">Du 01 Novembre 2019 au 25 mai 2020</span></p>
                 <p><span>Première année en DUT GEA</span><br> Université de Valenciennes et du Hainaut-CambrésisCampus Les Tertiales à Valenciennes <br> <span class="date">De Septembre 2016 à Juin 2017</span></p>
                 <p><span>Première année en BTS SIO</span> <br> Lycée Henry Wallon Valenciennes <br> <span class="date">De Septembre 2015 à Juin 2016</span></p>
                 <p><span>Baccalauréat professionnel commerce</span> <br> Lycée professionnel Pierre et Marie Curie Aulnoye-Aymeries <br> <span class="date">De Septembre 2012 à Juin 2015</span></p>
                 <p><span>BEP Commerce</span> <br> Lycée professionnel Pierre et Marie Curie Aulnoye-Aymeries <br> <span class="date">De Septembre 2012 à Juin 2014</span></p>
             </div>
-            <h2> Expériences professionnelles</h2>
+            <h2 id="expe"> Expériences professionnelles</h2>
 
-            <div>
+            <div id="blocExpe">
                 <p> <span>Référent numérique</span> <br>
                     Lycée Eugène Thomas à Le Quesnoy <br>
                     <span class="date">Du 01 Novembre 2018 au 31 Octobre 2019.</span>
@@ -43,9 +44,9 @@
 <!--Block containing the right part of the cv-->
         <div id="rightBloc">
             <div>
-                <h2>Informations Personnelles</h2>
+                <h2 id="info">Informations Personnelles</h2>
 
-                <ul>
+                <ul id="blocInfo">
                     <li>&#x2709; xxxxxx.yyyyy@gmail.com</li>
                     <li>
                         &#x1F3E0; Avenue kjhgf,<br>
@@ -61,16 +62,16 @@
             </div>
 
             <div>
-                <h2>Langues</h2>
-                <ul>
+                <h2 id="langue">Langues</h2>
+                <ul id="blocLangue">
                     <li>Français</li>
                     <li>Anglais</li>
                 </ul>
             </div>
 
             <div>
-                <h2>Compétences</h2>
-                <ul>
+                <h2 id="competence">Compétences</h2>
+                <ul id="blocCompetence">
                     <li>HTML5</li>
                     <li class="bar"><span class="color" id="html"></span></li>
                     <li>CSS</li>
@@ -87,8 +88,8 @@
             </div>
 
             <div>
-                <h2>Projets</h2>
-                <ul>
+                <h2 id="projet">Projets</h2>
+                <ul id="blocProjet">
                     <li><a href="https://github.com/Mdidu/carteVisite">Carte de visite</a></li>
                     <li><a href="https://github.com/Mdidu/Disposition">Disposition de la salle</a></li>
                 </ul>
@@ -96,8 +97,8 @@
         </div>
         <!-- Block containing form-->
         <div id="form">
-            <h2>Me contacter</h2>
-            <form method="post" action="mailto:kx5o5wjdyxjsh6s@jetable.org">
+            <h2 id="contact">Me contacter</h2>
+            <form method="post" action="mailto:kx5o5wjdyxjsh6s@jetable.org" id="blocContact">
                 <label for="nameForm">Nom :</label>
                 <input type="text"  name="nameForm" id="nameForm" required/>
                 <br>
@@ -112,6 +113,7 @@
                 <input type="submit" value="Envoyer" id="submit" />
             </form>
         </div>
+
     </div>
     <script src="script.js"></script>
 </body>
