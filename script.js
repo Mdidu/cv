@@ -1,6 +1,6 @@
 /*
 Améliorations possible: lors du clic sur un lien ne pas changer les couleurs sur la page.
-Intervertir les blocs dans le cv et conserver leurs positions
+Intervertir les blocs dans le cv et conserver leurs positions 
 Ajouter des images à gauche des informations se trouvant dans la liste lié aux informations personnelles
  */
 var cv = document.getElementById('CV');

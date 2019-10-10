@@ -105,3 +105,29 @@ a{
 #c {
     width: 30%;
 }
+/* formulaire */
+#form {
+    text-align: center;
+}
+label {
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+}
+input {
+    margin-top: 10px;
+    width: 50%;
+}
+#nameForm, #mail {
+    margin-left: 1.8%;
+}
+textarea {
+    display: block;
+    margin-top: 10px;
+    margin-left: 40%;
+}
+#submit {
+    display: block;
+    margin-left: 45%;
+    width: 10%;
+}

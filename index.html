@@ -20,7 +20,7 @@
         <div id="leftBloc">
             <h2>Diplômes et formation</h2>
             <div>
-                <p><span>Titre professionnel Développeur Web</span> <br> UpTo à Fourmies<br> <span class="date">Du 30 septembre 2019 au XX mai 2020</span></p>
+                <p><span>Titre professionnel Développeur Web</span> <br> UpTo à Fourmies<br> <span class="date">Du 01 Novembre 2019 au 25 mai 2020</span></p>
                 <p><span>Première année en DUT GEA</span><br> Université de Valenciennes et du Hainaut-CambrésisCampus Les Tertiales à Valenciennes <br> <span class="date">De Septembre 2016 à Juin 2017</span></p>
                 <p><span>Première année en BTS SIO</span> <br> Lycée Henry Wallon Valenciennes <br> <span class="date">De Septembre 2015 à Juin 2016</span></p>
                 <p><span>Baccalauréat professionnel commerce</span> <br> Lycée professionnel Pierre et Marie Curie Aulnoye-Aymeries <br> <span class="date">De Septembre 2012 à Juin 2015</span></p>
@@ -94,7 +94,25 @@
                 </ul>
             </div>
         </div>
+        <!-- Block containing form-->
+        <div id="form">
+            <h2>Me contacter</h2>
+            <form method="post" action="mailto:kx5o5wjdyxjsh6s@jetable.org">
+                <label for="nameForm">Nom :</label>
+                <input type="text"  name="nameForm" id="nameForm" required/>
+                <br>
+                <label for="firstName">Prenom :</label>
+                <input type="text"  name="firstName" id="firstName" required/>
+                <br>
+                <label for="mail">Mail :</label>
+                <input type="email" name="mail" id="mail" required />
+                <br>
+                <label for="txt">Votre opinion sur ce CV ?</label>
+                <textarea name="txt" id="txt" cols="30" rows="10"></textarea>
+                <input type="submit" value="Envoyer" id="submit" />
+            </form>
+        </div>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
