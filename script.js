@@ -58,7 +58,6 @@ changeColor.addEventListener('click', function (){
         color = true;
     }
 });
-
 // adds an event click on the title of the diploma category to hide the category! In EN
 // ajoute un évènement clic sur le titre de la catégorie diplome permettant de masquer la catégorie ! In FR
 diplome.addEventListener('click', function(){
