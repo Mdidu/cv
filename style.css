@@ -12,46 +12,41 @@
 }
 #CV{
     background: white;
-    position: relative;
-    left: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     width: 70%;
-    min-width: 1000px;
-    padding-left: 20px;
     border-radius: 5px;
     box-shadow: 10px 5px 5px gray;
-    min-height: 1120px;
+}
+#bloc{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4%;
 }
 #leftBloc{
-    display: inline-block;
-    min-width: 600px;
     width: 50%;
     border-right: 2px solid black;
-    margin-right: 15px;
-    margin-top: 5px;
+    text-align: initial;
 }
 
 #rightBloc{
-    display: inline-block;
     width: 24%;
-    min-width: 300px;
-    vertical-align: top;
-    position: relative;
-    margin-top: 5px;
+    margin-left: 7%;
+    text-align: initial;
 }
 h1, h2{
     padding-bottom: 0;
     color: rgb(51, 102, 255);
 }
 h1 {
-    text-align: center;
 }
 #intro {
-    text-align: center;
 }
 #name{
     font-size: 23px;
     font-weight: bold;
-    padding-top: 0;
 }
 #presentation{
     color: gray;
@@ -65,79 +60,34 @@ span {
     font-style: italic;
     font-size: 12px;
 }
-p, div{
-    padding-bottom: 5px;
-}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-li {
-    margin-bottom: 2px;
-    padding-bottom: 5px;
-}
 a{
     text-decoration-line: none;
     color: green;
 }
-.bar {
-    /*border: 1px solid gray;*/
-    background: gray;
-    min-width: 50px;
-    height: 15px;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-.color {
-    display: inline-block;
-    background: blue;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-#html {
-    width: 70%;
-}
-#css {
-    width: 70%;
-}
-#javascript {
-    width: 30%;
-}
-#php {
-    width: 30%;
-}
-#mysql {
-    width: 50%;
-}
-#c {
-    width: 30%;
-}
-/* formulaire */
-#form {
-    text-align: center;
-}
-label {
-    display: inline-block;
-    margin: 10px;
-    font-weight: bold;
-}
-input {
-    margin-top: 10px;
-    width: 50%;
-}
-#nameForm, #mail {
-    margin-left: 1.8%;
-}
-textarea {
-    display: block;
-    margin-top: 10px;
-    margin-left: 40%;
-}
-#submit {
-    display: block;
-    margin-left: 45%;
-    width: 10%;
+
+@media (max-width: 1338px){
+    #CV{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 22px;
+    }
+    #bloc{
+        width: 100%;
+        flex-direction: column;
+    }
+    #leftBloc, #rightBloc{
+        width: 100%;
+    }
+    #leftBloc{
+         border-right: none;
+     }
+    #rightBloc{
+        margin-left: 0;
+    }
 }

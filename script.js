@@ -1,8 +1,3 @@
-/*
-Améliorations possible: lors du clic sur un lien ne pas changer les couleurs sur la page.
-Intervertir les blocs dans le cv et conserver leurs positions
-Ajouter des images à gauche des informations se trouvant dans la liste lié aux informations personnelles
- */
 var cv = document.getElementById('CV'),
     body = document.getElementById('body'),
     leftBloc = document.getElementById('leftBloc'),
@@ -15,8 +10,7 @@ var diplome = document.getElementById('diplome'),
     info = document.getElementById('info'),
     langue = document.getElementById('langue'),
     competence = document.getElementById('competence'),
-    projet = document.getElementById('projet'),
-    contact = document.getElementById('contact');
+    projet = document.getElementById('projet');
 
 //targets the blocks of the categories you want to hide. in EN
 // cible les blocs des catégories qu'on veut masquer. in FR
@@ -25,8 +19,7 @@ var blocDiplome = document.getElementById('blocDiplome'),
     blocInfo = document.getElementById('blocInfo'),
     blocLangue = document.getElementById('blocLangue'),
     blocCompetence = document.getElementById('blocCompetence'),
-    blocProjet = document.getElementById('blocProjet'),
-    blocContact = document.getElementById('blocContact');
+    blocProjet = document.getElementById('blocProjet');
 
 // Boolean variable to know if the category is visible or not. in EN
 // Variable booléenne permettant de savoir si la catégorie est visible ou non. in FR
@@ -35,8 +28,7 @@ var diplomeVisible = true,
     infoVisible = true,
     langueVisible = true,
     competenceVisible = true,
-    projetVisible = true,
-    contactVisible = true;
+    projetVisible = true;
 
 var color = true;
 
@@ -45,10 +37,11 @@ changeColor.addEventListener('click', function (){
 
     if(color){
         cv.style.backgroundColor = 'black';
+        cv.style.transition = "background-color 2s";
         body.style.backgroundColor = 'white';
+        body.style.transition = 'background 2s';
         cv.style.color = 'white';
         leftBloc.style.borderRight = '2px solid white';
-//modifier
         color = false;
     }else {
         cv.style.backgroundColor = 'white';
@@ -65,7 +58,8 @@ diplome.addEventListener('click', function(){
         blocDiplome.style.display = 'none';
         diplomeVisible = false;
     }else {
-        blocDiplome.style.display = 'block';
+        blocDiplome.style.display = 'flex';
+        blocDiplome.style.flexDirection = 'column';
         diplomeVisible = true;
     }
 });
@@ -77,7 +71,8 @@ expe.addEventListener('click', function(){
         blocExpe.style.display = 'none';
         expeVisible = false;
     }else {
-        blocExpe.style.display = 'block';
+        blocExpe.style.display = 'flex';
+        blocExpe.style.flexDirection = 'column';
         expeVisible = true;
     }
 });
@@ -88,7 +83,8 @@ info.addEventListener('click', function(){
         blocInfo.style.display = 'none';
         infoVisible = false;
     }else {
-        blocInfo.style.display = 'block';
+        blocInfo.style.display = 'flex';
+        blocInfo.style.flexDirection = 'column';
         infoVisible = true;
     }
 });
@@ -100,7 +96,8 @@ langue.addEventListener('click', function(){
         blocLangue.style.display = 'none';
         langueVisible = false;
     }else {
-        blocLangue.style.display = 'block';
+        blocLangue.style.display = 'flex';
+        blocLangue.style.flexDirection = 'column';
         langueVisible = true;
     }
 });
@@ -111,7 +108,8 @@ competence.addEventListener('click', function(){
         blocCompetence.style.display = 'none';
         competenceVisible = false;
     }else {
-        blocCompetence.style.display = 'block';
+        blocCompetence.style.display = 'flex';
+        blocCompetence.style.flexDirection = 'column';
         competenceVisible = true;
     }
 });
@@ -122,18 +120,8 @@ projet.addEventListener('click', function(){
         blocProjet.style.display = 'none';
         projetVisible = false;
     }else {
-        blocProjet.style.display = 'block';
+        blocProjet.style.display = 'flex';
+        blocProjet.style.flexDirection = 'column';
         projetVisible = true;
-    }
-});
-// adds an event click on the category title to contact me to hide the category! In EN
-// ajoute un évènement clic sur le titre de la catégorie me contacter permettant de masquer la catégorie ! In FR
-contact.addEventListener('click', function(){
-    if(contactVisible){
-        blocContact.style.display = 'none';
-        contactVisible = false;
-    }else {
-        blocContact.style.display = 'block';
-        contactVisible = true;
     }
 });
